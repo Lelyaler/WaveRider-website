@@ -1,5 +1,5 @@
 # WaveRider-website
-##https://lelyaler.github.io/WaveRider-website/
+## https://lelyaler.github.io/WaveRider-website/
 
 ### 💻 About :
 The website is a single-landing page.
