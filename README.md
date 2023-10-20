@@ -5,6 +5,8 @@
 The website is a single-landing page.
 
 - Adaptable down to 320px: The design effectively adapts to screens as small as 320px
+  
+- On the website, there is a burger menu.
 
 - Shared Reusable Styles: Reusable styles are organized within the header's style.css to enhance efficiency
 
