@@ -1,30 +1,37 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var navBtn = document.querySelector(".nav-button");
+  var mobileNav = document.querySelector(".mobile-nav");
+  var body = document.body;
 
+  if (!navBtn || !mobileNav) return;
 
-const navBtn = document.querySelector('.nav-button');
-const mobileNav = document.querySelector('.mobile-nav');
-const body = document.body;
+  function toggleMobileNav() {
+    var isNoScroll = body.classList.toggle("no-scroll");
+    navBtn.classList.toggle("nav-button-close");
+    var isActive = mobileNav.classList.toggle("mobile-nav-active");
+    navBtn.setAttribute("aria-expanded", isActive ? "true" : "false");
+  }
 
-function toggleMobailNav () {
-   body.classList.toggle('no-scroll');
-   navBtn.classList.toggle('nav-button-close');
-   mobileNav.classList.toggle('mobile-nav-active');
-}
+  navBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleMobileNav();
+  });
 
-// клик по кнопке
-navBtn.addEventListener('click', function (умуте){
-    event.stopPropagation();
-    toggleMobailNav ()
-})
+  window.addEventListener("click", function () {
+    if (body.classList.contains("no-scroll")) {
+      toggleMobileNav();
+    }
+  });
 
-// клик за пределами новигации
-window.addEventListener('click', function(){
-   console.log('Click on Window');
+  mobileNav.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
 
-   if(body.classList.contains('no-scroll')){
-      toggleMobailNav ()
-   }
-})
-// остановливаем клик внутри открытой нав
-mobileNav.addEventListener('click', function (event){
-   event.stopPropagation();
-})
+  mobileNav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (body.classList.contains("no-scroll")) {
+        toggleMobileNav();
+      }
+    });
+  });
+});

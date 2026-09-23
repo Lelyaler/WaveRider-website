@@ -4,10 +4,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css"/>
-   <link rel="stylesheet" href="css/media.css">
-   <link rel="stylesheet" href="fonts/stylesheet.css">
-   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800" rel="stylesheet" />
+   <meta name="description" content="WaveRider — Catch the wave of adventure! Professional surf school, gear, community and surf camps worldwide.">
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏄</text></svg>" type="image/svg+xml">
+   <link rel="preload" href="fonts/PlayfairDisplay.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" as="image" href="./images/BG.webp" media="(min-width: 769px)" fetchpriority="high">
+   <link rel="preload" as="image" href="./images/BG-mobile.webp" media="(max-width: 768px)" fetchpriority="high">
+   <style>@font-face{font-family:'Gilroy';src:url('fonts/Gilroy-Bold.woff2') format('woff2'),url('fonts/Gilroy-Bold.woff') format('woff'),url('fonts/Gilroy-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:'Gilroy';src:url('fonts/Gilroy-Medium.woff2') format('woff2'),url('fonts/Gilroy-Medium.woff') format('woff'),url('fonts/Gilroy-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:'Gilroy';src:url('fonts/Gilroy-Extrabold.woff2') format('woff2'),url('fonts/Gilroy-Extrabold.woff') format('woff'),url('fonts/Gilroy-Extrabold.ttf') format('truetype');font-weight:800;font-style:normal;font-display:swap}@font-face{font-family:'Playfair Display';src:url('fonts/PlayfairDisplay.woff2') format('woff2');font-weight:400 900;font-style:normal;font-display:swap}*{margin:0;box-sizing:border-box}body{margin:0;font-family:'Gilroy',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background-color:#0B1D26;background-image:url("images/BG.webp");background-size:100% auto;background-repeat:no-repeat;color:#FFFFFF}@media (max-width:768px){body{background-image:url("images/BG-mobile.webp")}}a{color:#FFFFFF}h1,h2,h3,h4,h5,p{margin:0}.no-scroll{overflow-y:hidden}.container__wide{margin:0 auto;max-width:1790px;padding:0 15px}.container{max-width:1492px;margin-left:auto;margin-right:auto;padding-left:15px;padding-right:15px}.header{padding-top:64px;padding-bottom:600px}.row{display:flex}.space-between{justify-content:space-between}.align-center{align-items:center}.logo{font-family:'Playfair Display',Georgia,'Times New Roman',serif;font-size:32px;line-height:38px;letter-spacing:0.01em;text-transform:capitalize;font-weight:700}.nav-wrapper{margin-bottom:198px}.nav{font-weight:700;font-size:18px}.nav ul{display:flex;margin:0;padding:0;list-style-type:none}.nav li + li{margin-left:40px}.nav a{color:#FFFFFF;text-decoration:none;position:relative;padding-bottom:5px}.nav a:hover{color:#FBD784}.nav a::after{position:absolute;left:0;right:0;bottom:-1px;content:'';display:block;width:0;height:2px;background-color:#FBD784;opacity:0;transition:all .6s ease-in-out}.nav a:hover::after{opacity:1;width:100%}.account{position:relative;padding-left:30px;font-size:17px;line-height:1.2;font-weight:700;text-decoration:none;transition:color .2s ease-in;cursor:pointer}.account::before{content:"";display:block;position:absolute;left:-20%;top:-10%;background-image:url('images/cart.svg');width:24px;height:24px}.account:hover{color:#FBD784}.nav-button{position:relative;z-index:9;display:none;padding:0;height:25px;border:none;background:none;cursor:pointer}.nav-button:focus,.nav-button:active{outline:none}.nav-button-icon{position:relative;display:block;width:42px;height:5px;border:none;background-color:#FFFFFF}.nav-button-icon::before{content:"";position:absolute;top:-12px;left:0;display:block;width:42px;height:5px;background-color:#FFFFFF}.nav-button-icon::after{content:"";position:absolute;bottom:-12px;left:0;display:block;width:42px;height:5px;background-color:#FFFFFF}.nav-button-close .nav-button-icon{background-color:transparent}.nav-button-close .nav-button-icon::before{transform:rotate(45deg);top:0}.nav-button-close .nav-button-icon::after{transform:rotate(-45deg);top:0}.mobile-nav{display:none;z-index:8;flex-direction:column;justify-content:space-between;position:fixed;top:0;right:0;height:100%;width:320px;padding:70px 70px 50px 30px;background-color:rgba(35,39,39,0.8)}.mobile-nav .nav,.mobile-nav .account{display:block}.mobile-nav .account::before{left:-1%;top:-10%}.mobile-nav .nav ul{flex-direction:column}.mobile-nav .nav ul li{margin:0;margin-bottom:25px}.header-title{display:block;margin-left:auto;margin-right:auto;max-width:980px;padding-left:15px;padding-right:15px;text-decoration:none;transition:transform .8s cubic-bezier(0.710,0.445,0.460,1.345);text-shadow:0px 0px 15px rgba(0,0,0,0.6)}.header-title:hover{transform:translateY(-5%)}.header-title__category{margin-bottom:32px;position:relative;padding-left:104px;font-weight:400;font-size:18px;line-height:1.222;color:#FBD784;letter-spacing:6px;text-transform:uppercase}.header-title__category::before{position:absolute;left:0;top:50%;transform:translateY(-50%);display:block;content:"";height:2px;width:72px;background:#FBD784}.header-tilte__text{text-align:center;margin-bottom:32px;font-family:'Playfair Display',Georgia,'Times New Roman',serif;font-weight:500;font-size:88px;line-height:1.136;color:#FFFFFF;text-transform:capitalize;font-style:normal}.header-scroll{display:inline-block;position:relative;padding-right:32px;font-weight:700;font-size:18px;line-height:1.222;color:#FFFFFF}.header-scroll::after{content:"";width:16px;height:24px;display:block;position:absolute;top:50%;right:0;transform:translateY(-50%);background-image:url('images/arrow_downward_24px.svg')}.article{display:flex;justify-content:space-between;column-gap:30px;align-items:center;margin-bottom:200px}.article:nth-child(even){flex-direction:row-reverse}.article-text{padding-left:150px;margin-right:20px}.article__subtitle{margin-bottom:32px;position:relative;padding-left:96px;font-weight:400;font-size:18px;line-height:1.222;color:#FBD784;letter-spacing:6px;text-transform:uppercase}.article__subtitle::before{position:absolute;left:0;top:50%;transform:translateY(-50%);display:block;content:"";height:2px;width:72px;background:#FBD784}.article__title{max-width:555px;font-family:'Playfair Display',Georgia,'Times New Roman',serif;font-style:normal;font-weight:500;font-size:64px;line-height:1.2;color:#FFFFFF;margin-bottom:27px}.article-text{padding-left:150px;max-width:782px;position:relative}.article-text::before{position:absolute;left:0;top:0;transform:translateY(-50%);display:block;content:attr(data-number);font-style:normal;font-weight:700;font-size:240px;line-height:240px;color:rgba(255,249,249,0.1)}.article-text p{font-style:normal;font-weight:400;font-size:18px;line-height:1.78;color:#FFFFFF;margin-bottom:27px}.article__link{display:inline-block;font-weight:400;font-size:18px;line-height:1.333;color:#FBD784;position:relative;padding-right:40px;text-decoration:none}.article__link::after{content:"";width:24px;height:16px;display:block;position:absolute;top:20%;right:0;background-image:url('images/main/arrow_downward_24px.svg')}.article__link::before{content:"";width:0;position:absolute;left:0;right:0;bottom:-1px;height:2px;background-color:#FBD784;transition:all .6s ease-in-out}.article__link:hover::before{width:68%}.article-images img{width:566px;max-width:100%;height:auto;aspect-ratio:566 / 720;display:block;border-radius:5%}.footer{margin-bottom:120px}.footer-row{display:flex;justify-content:space-between}.footer__copyright{display:flex;flex-direction:column}.footer__copyright__logo{margin-bottom:24px}.footer__copyright__text{width:303px;font-weight:600;font-size:18px;line-height:32px}.foter__copyright__copy{margin-top:auto;font-style:normal;font-weight:600;font-size:18px;line-height:1.778;color:rgba(240,232,232,0.5)}.footer__nav + .footer__nav{margin-left:212px}.footer__nav__wrapper{display:flex}.footer__nav{max-width:200px;font-style:normal;font-weight:600;font-size:18px;line-height:1.78}.footer__nav__title{margin-bottom:24px;font-style:normal;font-weight:600;font-size:24px;line-height:1.333;color:#FBD784}.footer__nav ul{padding:0;margin:0;list-style:none}.footer__nav li{padding:0;margin:0;margin-bottom:11px}.footer__nav li:last-child{margin-bottom:0}.footer__nav a{text-decoration:none;position:relative;padding-bottom:5px}.footer__nav a:hover{color:#FBD784}.footer__nav a::after{position:absolute;left:0;right:0;bottom:-1px;content:'';display:block;width:0;height:2px;background-color:#FBD784;opacity:0;transition:all .7s ease-in-out}.footer__nav a:hover::after{opacity:1;width:100%}@media(max-width:1400px){.header{padding-bottom:500px}}@media(max-width:1200px){.header{padding-top:44px;padding-bottom:480px}.header-tilte__text{font-size:68px}.article{margin-bottom:150px}.article-text::before{width:140px;height:140px;font-size:140px}.article-text{padding-top:50px;padding-left:50px;max-width:50%;margin-right:0}.article,.article:nth-child(even){flex-direction:column-reverse;align-items:stretch;margin-bottom:100px}.article-text{max-width:100%}.article-images{width:100%;display:flex;justify-content:center}.article-images img{width:100%;max-width:566px;height:auto;aspect-ratio:566 / 720;object-fit:cover;margin-bottom:75px}}@media(max-width:1100px){.header{padding-bottom:300px}.footer__nav + .footer__nav{margin-left:112px}.article{margin-bottom:100px}}@media(max-width:920px){.header{padding-bottom:100px}.footer-row{flex-direction:column-reverse}.footer__nav__wrapper{padding-bottom:65px;margin-left:50px}.footer__copyright{margin-left:50px}}@media (max-width:800px){.header{padding-top:44px;padding-bottom:150px}.article{margin-bottom:70px}.nav,.account{display:none}.nav-button{display:block}.mobile-nav-active{display:flex}.header-tilte__text{font-size:48px}.header-title__category::before{width:32px}.header-title__category{font-size:14px;padding-left:80px}.article__title{font-size:44px}}@media (max-width:780px){.nav-wrapper{margin-bottom:80px}}@media (max-width:720px){.header{padding-bottom:100px}}@media(max-width:560px){.footer__nav__wrapper{flex-direction:column}.footer__nav + .footer__nav{margin-left:0}.footer__nav{margin-bottom:50px}.footer__nav__wrapper{padding-bottom:40px}}</style>
    <title>WaveRider</title>
 </head>
 <body>
@@ -18,45 +22,45 @@
                <div class="logo">WaveRider</div>
                <div class="nav">
                   <ul>
-                     <li><a href="#">Surf gear</a></li>
-                     <li><a href="#">About us</a></li>
-                     <li><a href="#">Blog</a></li>
+                     <li><a href="#gear">Surf gear</a></li>
+                     <li><a href="#about">About us</a></li>
+                     <li><a href="#blog">Blog</a></li>
                   </ul>
                </div>
-               <div href="#" class="account">Account</div>
-               <button class="nav-button">
+               <a href="#account" class="account">Account</a>
+               <button class="nav-button" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
                   <span class="nav-button-icon"></span>
                </button>
                <div class="mobile-nav">
                   <div class="nav">
                      <ul>
-                        <li><a href="#">Surf gear</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#gear">Surf gear</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#blog">Blog</a></li>
                      </ul>
                   </div>
-                  <div href="#" class="account">Account</div>
+                  <a href="#account" class="account">Account</a>
                </div>
             </div>
          </div>
       </nav>
-      <a href="#" class="header-title">
+      <a href="#main" class="header-title">
          <div class="header-title__category">Surf school</div>
          <h1 class="header-tilte__text">Catch the Wave of Adventure! Find Your Inner Wave Rider!</h1>
-         <p class="header-scroll"> scroll down</p>
+         <p class="header-scroll">scroll down</p>
       </a>
    </header>
-   <main class="main">
+   <main class="main" id="main">
       <div class="container">
          <article class="article">
             <div class="article-text" data-number="01">
                <div class="article__subtitle">Why surfing is worthy of being a part of your life</div>
                <h2 class="article__title">The Thrill of Riding Waves</h2>
                <p>Surfing is more than just a water sport; it's an exhilarating adventure that captures the essence of riding waves. The moment you catch a wave and glide along its powerful force, a surge of adrenaline rushes through your veins. You become one with the ocean, surrendering yourself to its ebb and flow. The sheer thrill of carving through the water, feeling the spray on your face, and hearing the crash of waves behind you is an experience like no other.Surfing not only offers an adrenaline rush but also connects you to nature on a profound level. As you paddle out into the lineup, you become attuned to the rhythm of the ocean. You witness the beauty of the coastline, feel the warmth of the sun on your skin, and embrace the vastness of the sea. It's a spiritual connection, a way to escape the chaos of everyday life and find solace in the ever-changing, yet constant, presence of the ocean.</p>
-               <a href="#" class="article__link">read more</a>
+               <a href="#article-1" class="article__link">read more</a>
             </div>
             <div class="article-images">
-               <img src="images/main/01.jpg" alt="main01">
+               <img src="images/main/01.webp" alt="Surfer carving powerful ocean wave" width="566" height="720">
             </div>
          </article>
          <article class="article">
@@ -64,10 +68,10 @@
                <div class="article__subtitle">Surfing brings people together</div>
                <h2 class="article__title">Surfing: Community and Friendship</h2>
                <p>Surfing is not only an individual sport but also a path to belonging to a unique community of people who share a passion for this ancient art form. In this article, we will explore how surfing creates a strong community and fosters the development of friendships among surfers.Surfing brings together people of different ages, professions, and cultures, united by a shared passion for this sport. The water and waves become a language that allows for easy connections and bonding with other surfers. Conversations on the beach, sharing experiences, advice, and stories create a special atmosphere where everyone can find their place.</p>
-               <a href="#" class="article__link">read more</a>
+               <a href="#article-2" class="article__link">read more</a>
            </div>
             <div class="article-images">
-               <img src="images/main/02.jpg" alt="main01">
+               <img src="images/main/02.webp" alt="Surfers community enjoying beach" width="566" height="720" loading="lazy">
             </div>
          </article>
          <article class="article">
@@ -80,10 +84,10 @@
                   <br>Full-Body Strength and Endurance:
                   <br>Surfing engages various muscle groups, including your arms, shoulders, back, core, and legs. Paddling against the waves and maintaining balance while riding them requires strength and endurance. Over time, you'll develop toned muscles and increased overall body strength.
                   </p>
-               <a href="#" class="article__link">read more</a>
+               <a href="#article-3" class="article__link">read more</a>
             </div>
             <div class="article-images">
-               <img src="images/main/01 (1).jpg" alt="main01">
+               <img src="images/main/01_1.webp" alt="Surfing fitness and healthy lifestyle" width="566" height="720" loading="lazy">
             </div>
          </article>
       </div>
@@ -100,27 +104,27 @@
             </div>
             <div class="footer__nav__wrapper">
                <div class="footer__nav">
-                     <h4 class="footer__nav__title">More on The Blog</h4> 
+                     <h3 class="footer__nav__title">More on The Blog</h3> 
                      <ul>
-                        <li><a href="#">About WaveRider</a></li>
-                        <li><a href="#">Contributors & Writers</a></li>
-                        <li><a href="#">Write For Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#about-waverider">About WaveRider</a></li>
+                        <li><a href="#contributors">Contributors & Writers</a></li>
+                        <li><a href="#write-for-us">Write For Us</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
                      </ul>
                </div>
                <div class="footer__nav">
-                     <h4 class="footer__nav__title">More on WaveRider</h4> 
+                     <h3 class="footer__nav__title">More on WaveRider</h3> 
                      <ul>
-                        <li><a href="#">The Team</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Press</a></li>
+                        <li><a href="#team">The Team</a></li>
+                        <li><a href="#jobs">Jobs</a></li>
+                        <li><a href="#press">Press</a></li>
                      </ul>
                </div>
            </div>
          </div>
       </div>
    </footer>
-   <script src="css/js/main.js"></script>
+   <script defer src="css/js/main.min.js"></script>
 </body>
 </html>
